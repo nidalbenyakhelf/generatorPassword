@@ -1,0 +1,100 @@
+/* ===== Reset أساسي ===== */
+:root{
+    --main-color-text:#222;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+    width: 39em;
+    height: auto;
+    padding: 1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 1em;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.container h1{
+    color:var(--main-color-text);
+}
+.container .inputBox{
+    width: 90%;
+    padding: .5em;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.container .inputBox div{
+    width: 100%;
+    padding-left: .5em;
+    background-color:#fff;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: var(--main-color-text);
+}
+.container .passwordLength{
+    width: 90%;
+}
+.container .passwordLength #range{
+    width: 100%;
+}
+.container .condation{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: start;
+}
+.container .condation .group{
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    gap:.5em;
+}
+.container .condation .group button{
+    background-color: #fff;
+    border-radius: 50%;
+    font-size: 1em;
+    width: 1em;
+    height: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    outline:none;
+    border: 1px solid #222;
+}
+.container #generatorBtn{
+    padding: 1em;
+    font-size: 1em;
+    border-radius: .5em;
+    background-color: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
